@@ -59,21 +59,21 @@ async def check_chicken_suitability(request: LocationRequest):
 
         # English response
         if lang == "english":
-            if avg_temp > 30:
+            if avg_temp > 40:
                 result["suitability"] = "NOT suitable"
-                result["message"] = "⚠️ The average temperature is expected to exceed 30°C over the next 7 days. It is NOT suitable to place young poultry chicks."
+                result["message"] = "⚠️ The average temperature is expected to exceed 40°C over the next 7 days. It is NOT suitable to place young poultry chicks."
             else:
                 result["suitability"] = "Suitable"
-                result["message"] = "✅ The average temperature is expected to NOT exceed 30°C over the next 7 days. It is suitable to place young chickens."
+                result["message"] = "✅ The average temperature is expected to NOT exceed 40°C over the next 7 days. It is suitable to place young chickens."
         
         # Hausa response
         else:
-            if avg_temp > 30:
+            if avg_temp > 40:
                 result["suitability"] = "BA A YARDA BA"
-                result["message"] = "⚠️ Matsakaicin zafin jiki yana tsammanin ya wuce 30°C a cikin kwanaki 7 masu zuwa. BA A YARDA da sanya ƙananan tsutsayen kaji ba."
+                result["message"] = "⚠️ Matsakaicin zafin jiki yana tsammanin ya wuce 40°C a cikin kwanaki 7 masu zuwa. BA A YARDA da sanya ƙananan tsutsayen kaji ba."
             else:
-                result["suitability"] = "YARDA"
-                result["message"] = "✅ Matsakaicin zafin jiki yana tsammanin BA zai wuce 30°C ba a cikin kwanaki 7 masu zuwa. Yana da YARDA da sanya ƙananan kajuna."
+                result["suitability"] = "AN YARDA"
+                result["message"] = "✅ Matsakaicin zafin jiki yana tsammanin BA zai wuce 40°C ba a cikin kwanaki 7 masu zuwa. Yana da YARDA da sanya ƙananan tsutsayen kaji ba.."
 
         return result
 
