@@ -73,7 +73,7 @@ async def check_chicken_suitability(request: LocationRequest):
                 result["message"] = "⚠️ Matsakaicin zafin jiki yana tsammanin ya wuce 40°C a cikin kwanaki 7 masu zuwa. BA A YARDA da sanya ƙananan tsutsayen kaji ba."
             else:
                 result["suitability"] = "AN YARDA"
-                result["message"] = "✅ Matsakaicin zafin jiki yana tsammanin BA zai wuce 40°C ba a cikin kwanaki 7 masu zuwa. Yana da YARDA da sanya ƙananan tsutsayen kaji ba.."
+                result["message"] = "✅ Matsakaicin zafin jiki yana tsammanin BA zai wuce 40°C ba a cikin kwanaki 7 masu zuwa. An YARDA da sanya ƙananan tsutsayen kaji."
 
         return result
 
