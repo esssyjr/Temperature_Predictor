@@ -7,10 +7,7 @@ import random
 app = FastAPI(title="Chicken Suitability Checker API 🌡️🐥")
 
 # API keys for Gemini
-API_KEYS = [
-    "AIzaSyBvtwP2ulNHPQexfPhhR13U30pvF2OswrU",
-    "AIzaSyD0dLXPPrZmLbnHOj3f9twHmT_PZc15wMo",
-]
+API_KEY = os.getenv("MY_API_KEY")
 
 # Configure Gemini with a random API key
 api_key = random.choice(API_KEYS)
