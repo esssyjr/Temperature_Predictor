@@ -44,7 +44,7 @@ Check if a location is suitable for raising chicks based on projected heat condi
   "suitability": "AN YARDA",
   "message": "✅ Matsakaicin zafin jiki yana tsammanin BA zai wuce 40°C ba..."
 }
-
+```
 ## 🏠 GET `/`
 
 Returns a welcome message and basic usage guide.
